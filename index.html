@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Hana ❤️</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: "Times New Roman", serif;
+    background-color: #ffc0cb;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-family: "Times New Roman", serif;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover {
+    background-color: #ffe6f0;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Music -->
+<audio id="music" src="nje-grusht-qershi.mp3"></audio>
+
+<!-- Page 1 -->
+<div class="section" id="startPage">
+    <button onclick="startWebsite()">click me to start :)</button>
+</div>
+
+<!-- Page 2 -->
+<div class="section hidden">
+    <div>Hana, my love, we’ve been through so much together</div>
+</div>
+
+<!-- Page 3 -->
+<div class="section hidden">
+    <div>you’re so loving, kind and supportive :(</div>
+</div>
+
+<!-- Page 4 -->
+<div class="section hidden">
+    <div>you’re such a joy to be around dear. around you, I feel complete</div>
+</div>
+
+<!-- Page 5 -->
+<div class="section hidden">
+    <div>you are the best girlfriend ever. I cant wait to make you my wife soon <3</div>
+</div>
+
+<!-- Page 6 -->
+<div class="section hidden">
+    <div>I cannot believe my birthday wish of never being alone again got fulfilled in such an amazing way</div>
+</div>
+
+<!-- Page 7 -->
+<div class="section hidden">
+    <div>I’m proud to have found my soulmate at such a young age :D</div>
+</div>
+
+<!-- Page 8 -->
+<div class="section hidden">
+    <div>Happy Valentines Day!! te dua shum shpirti im! this is the first of many!</div>
+</div>
+
+<script>
+function startWebsite() {
+    // Play music
+    document.getElementById("music").play();
+
+    // Reveal all sections
+    let sections = document.querySelectorAll(".hidden");
+    sections.forEach(section => {
+        section.classList.remove("hidden");
+    });
+
+    // Scroll to next page
+    window.scrollTo({
+        top: window.innerHeight,
+        behavior: "smooth"
+    });
+}
+</script>
+
+</body>
+</html>
